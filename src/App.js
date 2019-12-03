@@ -33,11 +33,11 @@ const App = () =>{
 
   return(
     <div className="App">
-      <h1>Search now for recipes!</h1>
+      <h1 id="title">Search now for recipes!</h1>
       <form className="search-form" onSubmit={onSearch}>
         <input type="text" className="search-bar" value={search} onChange={updateSearch}/>
-        <button className="search-button" type="submit">Search</button>
       </form>
+      <div id="recipe-box">
       {recipes.map(recipe =>(
         <Recipe
         key={recipe.recipe.label}
@@ -48,6 +48,8 @@ const App = () =>{
         ingredients={recipe.recipe.ingredients}
         />
       ))}
+      </div>
+      <img src={ require('./undraw_eating_together_tjhx.svg') }/>
     </div>
   );
 }
