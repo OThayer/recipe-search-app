@@ -1,3 +1,6 @@
+This is a simple recipe search app using only React 16. It utilizes the Edamam API to search for the recipes. 
+NOTE: There is a certain limit on how many requests can be prosessed in a certain amount of time. If your searches suddenly stop responding, please wait 4-5 minutes to try again. 
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
